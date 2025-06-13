@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Chatbot</title>
+</head>
+<body>
+  <div class="container">
+    <h1>APCSP Chatbot</h1>
+    <img src="/home/aiml/ai/static/index_background.png" />
+    <div class="chatbox">
+<div id="chatlogs"></div>
+<div class="button-box">
+    <input type="text" id="userInput" placeholder="Type your question & Hit send ..." autofocus>
+            <button onclick="sendMessage()">Send</button>
+</div>
+    </div>
+
+    <script>
+        function sendMessage() {
