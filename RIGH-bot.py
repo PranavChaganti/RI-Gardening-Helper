@@ -20,5 +20,5 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_parse import LlamaParse
 
 #documents = SimpleDirectoryReader("/Users/pc/aiml/ai-env/Data").load_data()
-documents = SimpleDirectoryReader("https://github.com/PranavChaganti/aiml/blob/main/APCSP.pdf").load_data()
+documents = SimpleDirectoryReader("data").load_data()
 index = VectorStoreIndex.from_documents(documents)
